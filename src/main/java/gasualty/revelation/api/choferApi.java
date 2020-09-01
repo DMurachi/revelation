@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("gasualty/revelation/api/v1/chofer")
+@RequestMapping("api/v1/chofer")
 @RestController
 public class choferApi{
     private final choferController choferController;

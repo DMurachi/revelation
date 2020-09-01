@@ -1,4 +1,4 @@
-package gasualty.revelation.service;
+/*package gasualty.revelation.service;
 
 import gasualty.revelation.models.chofer;
 import gasualty.revelation.repository.choferRepo;
@@ -11,8 +11,8 @@ public class choferService implements choferRepo {
     private static List<chofer> DB = new ArrayList<>();
     @Override
     public int insertChofer(chofer chofer) {
-        DB.add(new chofer(chofer.getCedula(), chofer.getNombre(), chofer.getCondicion()/*, chofer.getCisterna()*/, chofer.getPassword()));
-        return 1;//to make sure it works
+        DB.add(new chofer(chofer.getCedula(), chofer.getNombre(), chofer.getCondicion(), chofer.getPassword()));
+        return 1;
     }
 
     @Override
@@ -54,7 +54,7 @@ public class choferService implements choferRepo {
         else return 3;
     }
 
-    @Override//faltan cambios a esta funcion para que revise las condicioones activas e inactivas. Dependiendo del valor que mande el admin.
+    @Override
     public Optional<chofer> selectChoferByCondicion(int condicion) {
         return DB.stream()
                 .filter(chofer -> chofer.getCondicion()==condicion)
@@ -62,4 +62,4 @@ public class choferService implements choferRepo {
     }
 
 
-}
+}*/
