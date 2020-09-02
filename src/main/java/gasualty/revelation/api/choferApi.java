@@ -24,21 +24,21 @@ public class choferApi{
     public List<chofer> getAllChofer(){
         return choferController.getAllChofer();
     }
-    @GetMapping(path = "{cedula}")
-    public chofer getChoferByCedula(@PathVariable("cedula") String cedula){
+    @GetMapping(path = "{api/v1/chofer/cedula}")
+    public chofer getChoferByCedula(@PathVariable("{api/v1/chofer/cedula}") String cedula){
         return choferController.getChoferByCedula(cedula)
                 .orElse(null);
     }
     @GetMapping(path = "{condicion}")
-    public chofer getChoferByCondicion(int condicion){
+    public chofer getChoferByCondicion(String condicion){
         return choferController.getChoferByCondicion(condicion)
                 .orElse(null);
     }
-    @DeleteMapping(path = "{cedula}")
+    @DeleteMapping(path = "{ceduladel}")
     public void deleteChoferByCedula(@PathVariable("cedula") String cedula){
         choferController.deleteChofer(cedula);
     }
-    @PutMapping(path="{cedula}")
+    @PutMapping(path="{cedulaact}")
     public void updateChoferbyCondicion(@PathVariable("cedula")  @NonNull @RequestBody String cedula){
         choferController.updateChoferCondicion(cedula);
     }

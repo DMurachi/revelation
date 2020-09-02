@@ -23,7 +23,7 @@ public class choferController {
     public Optional<chofer> getChoferByCedula(String cedula){
         return choferRepo.selectChoferByCedula(cedula);
     }
-    public Optional<chofer> getChoferByCondicion(int condicion){
+    public Optional<chofer> getChoferByCondicion(String condicion){
         return choferRepo.selectChoferByCondicion(condicion);
     }
     public int updateChoferCondicion(String cedula){

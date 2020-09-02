@@ -15,5 +15,5 @@ public interface choferRepo {
     Optional<chofer> selectChoferByCedula(String cedula);
     int deleteChoferByCedula(String cedula);
     int updateChoferByCondicion(String cedula);
-    Optional<chofer> selectChoferByCondicion(int condicion);
+    Optional<chofer> selectChoferByCondicion(String condicion);
 }
